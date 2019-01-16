@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <div class="ticTacToe">
+    <div class="playField">
+      <div class="row row1">
+        <div data-row="1" data-col="1" data-left='1' class="col col1">
+          O
+        </div>
+        <div data-row="1" data-col="2" class="col col2">
+        </div>
+        <div data-row="1" data-col="3" data-right='1' class="col col3">
+          X
+        </div>
+      </div>
+      <div class="row row2">
+        <div data-row="2" data-col="1" class="col col1">
+        </div>
+        <div data-row="2" data-col="2" data-left='1' data-right='1' class="col col2">
+          X
+        </div>
+        <div data-row="2" data-col="3" class="col col3">
+        </div>
+      </div>
+      <div class="row row3">
+        <div data-row="3" data-col="1" data-right='1' class="col col1">
+        </div>
+        <div data-row="3" data-col="2" class="col col2">
+        </div>
+        <div data-row="3" data-col="3" data-left='1' class="col col3">
+        </div>
+      </div>
+    </div>
+    <div class="navPanel">
+      <a href="#" data-type-game="start" class="mainBtn">START GAMEa</a>
+      <div class="choiceBtn" hidden>
+        <a href="#" data-type-game="pc" class="choiceBtn__pc">ONE PLAYER</a>
+        <a href="#" data-type-game="human" class="choiceBtn__pc">TWO PLAERS</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

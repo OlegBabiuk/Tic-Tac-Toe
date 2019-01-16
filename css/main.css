@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'PWChalk';
+  src: url('../fonts/PWChalk.woff2') format('woff2'),
+       url('../fonts/PWChalk.woff') format('woff'),
+       url('../fonts/PWChalk.ttf') format('truetype');
+}
+body {
+  font-family: "PWChalk", Verdana, sans-serif;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+p {
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+}
+.ticTacToe{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.playField {
+  padding: 50px;
+  background-color: #00bcaa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 2px solid black;
+  position: relative;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.col {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 100px;
+  color: #033f39;
+  transition: all 0.2s;
+}
+.row1 {
+  border-bottom: 10px solid #009f90;
+}
+.row3 {
+  border-top: 10px solid #009f90;
+}
+.col1 {
+  border-right: 10px solid #009f90;
+}
+.col3 {
+  border-left: 10px solid #009f90;
+}
+.navPanel {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 0 0 15px 15px;
+  width: 422px;
+  font-size: 35px;
+  box-shadow: 0px 15px 32px -7px;
+}
+.mainBtn {
+  display: block;
+}
+.choiceBtn {
+  justify-content: space-around;
+}
+.choiceBtn a {
+  display: block;
+  font-size: 25px;
+  text-align: center;
+  padding: 5px;
+  transition: all 0,2s;
+}
+.choiceBtn a:hover {
+  outline: 1px solid black;
+}
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 40px;
+  transition: all 0.2s;
+}
+.modal span {
+  font-size: 1.5em;
+}
+.modal a {
+  color: white;
+  display: inline-block;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 15px;
+  transition: all 0.2s;
+}
+.modal a:hover {
+  color: black;
+  background-color: white;
+}
+.hidden {
+  display: none;
+}
