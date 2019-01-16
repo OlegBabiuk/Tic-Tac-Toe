@@ -48,7 +48,7 @@ let ticTac = (function () {
     navPanel.lastElementChild.hidden = false;
 
     if (playField.querySelector('.modal')) {
-      playField.querySelector('.modal').remove()
+      playField.querySelector('.modal').remove();
     }
   }
 
@@ -196,7 +196,7 @@ let ticTac = (function () {
     playField.insertAdjacentHTML('beforeend', modalHtml);
     playField.lastElementChild
       .lastElementChild
-      .addEventListener('click', revenge)
+      .addEventListener('click', revenge);
   }
 
   function revenge(event) {
@@ -206,11 +206,11 @@ let ticTac = (function () {
   }
 
   return {
-    init,
+    init
   }
 })()
 
 document.querySelector('.navPanel').addEventListener('click', (event) => {
   event.preventDefault();
-  ticTac.init(event)
+  ticTac.init(event);
 })
