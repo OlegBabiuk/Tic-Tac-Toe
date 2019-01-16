@@ -78,6 +78,7 @@ let ticTac = (function () {
         modalWindow(user1);
         return;
       }
+      
       if (typeGame === 'pc' && !playField.querySelector('.modal')) {
         onePlayer();
       }
@@ -122,6 +123,7 @@ let ticTac = (function () {
       }
       cell.textContent = '';
     })
+
     return lastPossible;
   }
 
@@ -165,17 +167,19 @@ let ticTac = (function () {
     for (let i = 0; i < arrRoutes.length; i++) {
       for (let j = 1; j < 4; j++) {
         let key = `${arrRoutes[i]}${j}`;
+
         if (checkRout(arrRoutes[i], j) === undefined) {
           continue
         }
         results[key] = checkRout(arrRoutes[i], j);
-
       }
     }
     
     if (Object.keys(results).length) {
       for (const key in results) {
-        if (results[key]) return true;
+        if (results[key]) {
+          return true;
+        }  
       }
     }
   }
