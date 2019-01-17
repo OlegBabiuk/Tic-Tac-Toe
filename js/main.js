@@ -78,7 +78,7 @@ let ticTac = (function () {
         modalWindow(user1);
         return;
       }
-      
+
       if (typeGame === 'pc' && !playField.querySelector('.modal')) {
         onePlayer();
       }
